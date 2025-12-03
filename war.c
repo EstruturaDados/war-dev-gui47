@@ -340,7 +340,7 @@ void simularAtaque(Territorio *atacante, Territorio *defensor, const char *corJo
                defensor->nome, defensor->numTropas);
         
         // Se o defensor perdeu todas as tropas, território é conquistado
-        if (defensor->numTropas <= 0) {
+        if (defensor->numTropas == 0) {
             printf("\n*** TERRITORIO CONQUISTADO! ***\n");
             printf("%s agora pertence ao exercito %s!\n", defensor->nome, corJogador);
             
